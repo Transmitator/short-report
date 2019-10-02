@@ -1,0 +1,58 @@
+\documentclass[a5paper,11pt]{article} %draft,openright
+\usepackage{polski} % polish typeset
+\usepackage[utf8x]{inputenc} 
+\usepackage{gensymb}
+\usepackage{epsf,graphicx}
+\usepackage{latexsym, amssymb, amsbsy, amsmath} % symbols of the American Math Soc
+\usepackage{setspace, cite} % set space between lines | citation
+\usepackage{mathtools} % extension to amsmath
+\usepackage[justification=centering]{caption}
+\usepackage{multirow} % create tabular cellsspanning multiple rows
+\usepackage[figuresright]{rotating}
+\usepackage{float}
+\usepackage{tabularx}
+\usepackage{array}
+\usepackage{enumitem} % pretty lists? 
+\usepackage{booktabs} % pretty tables? 
+\usepackage{subcaption}
+
+\usepackage{makeidx} % index - \makeindex in preambule, then \printindex in document
+\usepackage{wasysym} % \smiley and other funny things
+\usepackage{indentfirst} % Pierwszy akapit zaczyna się wcięciem (jeśli dokument ma być po polsku)
+\usepackage[colorlinks=true, linkcolor=red, urlcolor=black]{hyperref} % [colorlinks=true, linkcolor=red, urlcolor=black]
+\usepackage{wrapfig} % wrap figures
+\usepackage[colorinlistoftodos]{todonotes} % use `disable` option to disable, `shadow` option for shadow background (doc predicts problems with tikz versions prior to 2.0)
+\usepackage{lscape} % change page orientation 
+\usepackage{xcolor} 
+\usepackage{listings}
+
+\PrerenderUnicode{ę} % fix issue with polish character in TOC
+
+\newcommand{\smalltodo}[2][]
+{\todo[caption={#2}, #1]
+	{\begin{spacing}{0.5}#2\end{spacing}}}
+
+\newcommand{\bash}[1]{\\ \indent\indent\indent\texttt{\$ #1} } % crude but it works :p
+\newcommand{\pytanie}[1]{\todo[color=red!40,size=\small,noline]{#1}}
+\newcommand{\weryfikuj}[1]{\todo[color=violet!50, size=\small]{#1}}
+\newcommand{\komentarz}[1]{\todo[color=green!50, noline, size=\small]{#1}}
+\newcommand{\komentarzInline}[1]{\todo[color=green!50, noline, size=\small, inline]{#1}}
+\newcommand{\cytat}[2]{\begin{quote}\textit{#1} \flushright \text{#2}\end{quote}}
+\newcommand{\definicja}[2]{
+	\centering 
+	\begin{tcolorbox}[width=\textwidth,colback={white},title={\textbf{#1}},colbacktitle=blue!50,coltitle=black, width = 0.9\linewidth, colframe=blue!50]    
+		#2
+	\end{tcolorbox} 
+	\flushleft}
+\newcommand{\pytanieodpowiedz}[2]{\noindent \textbf{Q:} #1\\\textbf{A:} #2}
+
+
+%\makeindex
+\title{Title}
+\author{Piotr Niewiejski}
+\date{\today}
+
+\begin{document}
+\maketitle
+
+\end{document}
