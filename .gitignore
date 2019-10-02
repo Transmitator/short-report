@@ -1,0 +1,30 @@
+# EDITOR
+.idea/
+.vscode/
+
+# LaTeX temporary files
+*.aux
+*.log
+*.toc
+*.idx
+*.ind
+*.lof
+
+# PDF output
+*.pdf
+
+# Latexmk
+*.fdb_latexmk
+
+# SyncTeX
+*.synctex.gz
+
+# LaTeX Beamer
+*.snm
+*.vrb
+*.nav
+*.out
+
+# BibTeX
+*.bbl
+*.blg
