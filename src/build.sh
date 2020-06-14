@@ -19,6 +19,7 @@ pdflatex $PDFLATEX_OPTIONS $BASE.tex
 pdflatex $PDFLATEX_OPTIONS $BASE.tex
 
 # cleanup
-find . -type f | grep -E "*.aux|*.blg|*.dvi|*.log|*.lot|*.lof|*.toc|*.gz|*.bbl|*.fls|*.idx|*.ind|*.ilg|*.out" | xargs rm
+find . -type f | grep -E "\.aux|\.blg|\.dvi|\.log|\.lot|\.lof|\.toc|\.gz|\.bbl|\.fls|\.idx|\.ind|\.ilg|\.out|\.snm|\.nav" | xargs rm
 
 exit 0
+
