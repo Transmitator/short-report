@@ -4,11 +4,21 @@
 
 # LaTeX temporary files
 *.aux
+*.blg
+*.dvi
 *.log
+*.lot
+*.lof
 *.toc
+*.gz
+*.bbl
+*.fls
 *.idx
 *.ind
-*.lof
+*.ilg
+*.out
+*.snm
+*.nav
 
 # PDF output
 *.pdf
