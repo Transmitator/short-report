@@ -1,6 +1,11 @@
 # Short report template in LaTeX
 
+Build the PDF with
 ```
-$ cd src
-$ ./build.sh main.tex 
+$ make
+```
+
+See other available options with:
+```
+$ make help
 ```
